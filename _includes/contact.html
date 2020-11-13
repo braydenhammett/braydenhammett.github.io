@@ -1,0 +1,27 @@
+<form id="contactForm">
+	<div class="row">
+        <div class="twelve columns">
+			<label for="contactSubject">Subject</label>
+			<input class="u-full-width" type="text" placeholder="Subject…" id="contactSubject">
+		</div>
+	</div>
+	<label for="contactMessage">Message</label>
+	<textarea class="u-full-width" placeholder="Message…" id="contactMessage"></textarea>
+	<input class="button-primary" type="submit" value="Send">
+</form>
+<script>
+	const queryString = window.location.search;
+	console.log(queryString);
+
+	const urlParams = new URLSearchParams(queryString);
+	if (urlParams.has('service')) {
+		const service = urlParams.get('service');
+		document.getElementById('contactSubject').value = service;
+	}
+
+	document.getElementById('contactForm').onsubmit = function() {
+		let mailto = document.createElement('a');
+		mailto.href = 'mailto:{{ site.email }}?subject=' + encodeURIComponent(document.getElementById('contactSubject').value) + '&body=' + encodeURIComponent(document.getElementById('contactMessage').value);
+		mailto.click();
+	}
+</script>

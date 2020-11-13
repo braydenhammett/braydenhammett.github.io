@@ -1,0 +1,13 @@
+<div class="row service">
+	<div class="one-third column display-desktop fill">
+		<img src="{{ service.image | absolute_url }}" alt="Thumbnail for: {{ service.name | escape }}">
+	</div>
+	<div class="two-thirds column service-info">
+		<h2 class="section-heading">
+			{{ service.name | escape }}
+		</h2>
+		<p>{{ service.content | normalize_whitespace }}</p>
+		<span class="u-pull-left service-cost"><b>{{ service.price }}</b></span>
+		<a class="u-pull-right" href="/contact/?service={{ service.name | escape }}">Contact &rarr;</a>
+	</div>
+</div>

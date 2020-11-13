@@ -1,0 +1,42 @@
+<footer class="site-footer">
+	<div class="row">
+		<div class="twelve columns"><h2 class="footer-heading">Contact</h2></div>
+	</div>
+	<div class="row">
+		<div class="one-half column">
+			<ul class="contact" id="contact-footer">
+				<li>Copyright {{ site.year }}</li>
+				<li>{{ site.author }}</li>
+				<li><a href="mailto:{{ site.email }}"><i class="fa fa-envelope"></i>&nbsp;{{ site.email }}</a></li>
+				<li><a href="tel:{{ site.phone }}"><i class="fa fa-phone"></i>&nbsp;{{ site.phone_formatted }}</a></li>
+				<li><a href="https://www.instagram.com/{{ site.insta }}"><i class="fa fa-instagram"></i>&nbsp;@{{ site.insta }}</a></li>
+			</ul>
+		</div>
+		<div class="one-half column">
+			<p>{{ site.description | escape }}</p>
+		</div>
+	</div>
+	<!--SEO-->
+	<div hidden itemscope itemtype="http://schema.org/LocalBusiness">
+		<h1 itemprop="name">{{ site.title }}</h1>
+		<span itemprop="telephone">
+			<a href="tel:{{ site.phone }}">
+				{{ site.phone_formatted }}
+			</a>
+		</span>
+		<span itemprop="email">
+			<a href="mailto:{{ site.email }}">
+				{{ site.email }}
+			</a>
+		</span>
+		<span itemprop="areaServed">
+			{{ site.areaServed }}
+		</span>
+		<span itemprop="priceRange">
+			{{ site.priceRange }}
+		</span>
+		<meta itemprop="currenciesAccepted" content="{{ site.currenciesAccepted }}"/>
+		<meta itemprop="paymentAccepted" content="{{ site.paymentAccepted }}"/>
+	</div>
+	<!--End SEO-->
+</footer>

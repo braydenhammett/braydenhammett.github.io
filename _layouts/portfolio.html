@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="row">
+	<div class="twelve columns">
+		<h1 class="content-heading">Portfolio</h1>
+	</div>
+</div>
+
+{{ content }}
+
+<div class="row">
+    {% for item in site.portfolio_items %}
+    {% include portfolio_item.html %}
+    {% endfor %}
+</div>

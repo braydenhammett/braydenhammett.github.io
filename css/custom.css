@@ -1,0 +1,160 @@
+/*
+* #fcfcfc: Background
+* #0d2330: Text
+*
+* #4281a4: Accent #1
+* #3690C1: Accent #2
+*/
+
+.display-desktop {
+  display: none;
+}
+
+.service-info {
+  padding-top: 7px;
+  padding: 4%;
+}
+
+@media (min-width: 550px) {
+  .display-desktop {
+    display: initial;
+  }
+
+  .fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .fill img {
+    flex-shrink: 0;
+    flex-grow: 1;
+    min-width: 100%;
+    max-height: 525px;
+  }
+
+  .service-info {
+    padding: 3% 4% 0 0;
+  }
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
+}
+
+a {
+   text-decoration: none;
+   font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-title, .site-title:visited {
+  font-size: 32px;
+  line-height: 54px;
+  font-weight: 400;
+  font-family: 'Anton', sans-serif;
+  color: #f1f8fb;
+}
+
+.site-title:hover {
+	color: #e2eff7;
+}
+
+.site-header {
+  border-bottom: 1px solid #f1f8fb;
+}
+
+.site-nav {
+  line-height: 54px;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.site-nav ul li {
+  display: inline;
+  padding: 0 5px;
+}
+
+.site-nav ul li a {
+  text-decoration: none;
+}
+
+.site-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.content-heading, .section-heading, .footer-heading {
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.footer-heading {
+  font-size: 18px;
+}
+
+.content-heading {
+  font-size: 28px;
+}
+
+.section-heading {
+  font-size: 24px;
+}
+
+.section-heading a, .section-heading a:hover {
+  color: #e2eff7;
+}
+
+.site-footer {
+  border-top: 1px solid #f1f8fb;
+  padding: 30px 0;
+}
+
+.content {
+  padding: 30px 0;
+}
+
+.contact {
+  list-style: none;
+}
+
+.contact li {
+  margin: 0px;
+}
+
+.external::after {
+  content: '\2197';
+  vertical-align: super;
+  font-size: .6em;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found h1 {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.service {
+  border: solid 1px #aaa;
+  margin: 10px;
+}
+
+.service-cost {
+  font-size: 1.2em;
+}

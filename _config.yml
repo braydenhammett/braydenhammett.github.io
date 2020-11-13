@@ -1,0 +1,27 @@
+title: Hammett Detailing
+email: brayden@hammettdetailing.com
+phone: +17203462234
+phone_formatted: 720-346-2234
+insta: brayden_hammett
+author: Brayden Hammett
+description: >- # this means to ignore newlines until "baseurl:"
+  Denver Automotive Detailing
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://www.hammettdetailing.com" # the base hostname & protocol for your site, e.g. http://example.com
+year: 2020
+
+areaServed: Denver, Colorado
+currenciesAccepted: USD
+paymentAccepted: Cash
+# $, $$, or $$$
+priceRange: $$
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+collections:
+  services:
+  portfolio_items:

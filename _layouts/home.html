@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="row">
+	<div class="twelve columns">
+		<h1 class="content-heading">Services</h1>
+	</div>
+	{{ content }}
+</div>
+{% for service in site.services %}
+{% include service.html %}
+{% endfor %}
